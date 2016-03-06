@@ -1,4 +1,7 @@
-var str = 'apple';
+var word = 'apple';
+var sentence = 'Apples are delicious!'
+
+// Reverse without built-in methods and return a new string
 
 function reverseString(string){
   var result = '';
@@ -9,4 +12,14 @@ function reverseString(string){
   return result;
 }
 
-reverseString(str);
+reverseString(word);
+
+// Reverse in place with buit-in methods
+
+function reverseStringWithMethods(string){
+  var string = string.split(' ').reverse().join(' ');
+  console.log(string);
+  return string;
+}
+
+reverseStringWithMethods(sentence);
